@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <style>
-h1 {text-align: center;}
-p {text-align: center;}
-div {text-align: center;}
+  body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+  }
+  header {
+      padding: 20px;
+      font-size: large;
+  }
+  section {
+      padding: 0px;
+      margin: 40px 20px; /* Increased margin to add more space between sections */
+  }
+  section#about, section#posts, section#suggestions {
+      text-align: center;
+  }
+  a {
+      text-decoration: none;
+  }
+  a:hover {
+      text-decoration: underline;
+  }        
+  ul {
+      list-style: none; /* Removes default bullet points */
+      padding: 0px;
+  }
+  ul li {
+      margin: 10px 0;
+      padding: 10px;
+  }
 </style>
 <body>
 <div id="content">
-    <h1 id="tagline">opinionsoninsights.com</h1>
-  	<h4></h4>
-  	<pre>
-    This is a blog by Magnus Brander where various opinions on insights will be published. 
-    
-    Posts and other content will be added as the author finds time.
-    
-    To contact the author about suggestions you can send an email to <a href= "mailto:magnusbrander95@gmail.com">magnusbrander95@gmail.com</a>. 
-    </pre>
+    <header>
+      <h1>opinionsoninsights.com</h1>
+    </header>
+    <section id="about">
+      <h2>About</h2>
+      <p>This is a blog by Magnus Brander where various opinions on insights will be published.</p> 
+    </section>
+    <section id="posts">
+      <h2>Posts</h2>
+      <ul>
+        <li><a href="posts/opening-time-of-doors-in-the-copenhagen-metro.html">Opening time of doors in the Copenhagen metro</a></li>
+        <li><a href="posts/train-track-runners.html">Train track runners in Scania</a></li>
+        <li><a href="posts/underdeveloped-energy-grid-of-souther-sweden.html">The underdeveloped energy grid of sothern Sweden</a></li>
+    </ul>
+    </section>
+    <section id="suggestions">
+      <h2>Suggestions</h2>
+      <p>To contact the author about suggestions you can send an email to <a href= "mailto:magnusbrander95@gmail.com">magnusbrander95@gmail.com</a>. </p>
+    </section>
 </div>
 <script>
   console.log("Welcome to opinionsoninsights.com");
